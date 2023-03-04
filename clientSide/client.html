@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>A Simple Post</title>
+</head>
+<body>
+    <div class="max-w-sm mx-auto my-5">
+        <div class=text-center>
+            <h1 class="text-3xl font-bold">Send POST Request</h1>
+             <button 
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" 
+                id="btn" 
+                onclick="send(4000)">
+                GO HTTP server
+             </button>
+    </div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    async function send(port) {
+        const url = 'http://localhost:' + port 
+        const response = await axios.post(url, {}, {
+            headers: {
+              // make acces origin
+                'Content-Type': 'application/json',
+            }
+        })
+        console.log(response.data)
+    }
+</script>
+</body>
+</html>

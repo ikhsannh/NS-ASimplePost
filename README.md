@@ -1,1 +1,5 @@
-# GO HTTP Server accepting POST requests from the client side and sending data to server side
+# Server: GO HTTP Server, Client: HTML5
+
+## Screen
+
+![Desktop](https://github.com/nashkispace/NS-ASimplePost/blob/main/clientSide/View.gif)

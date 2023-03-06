@@ -1,4 +1,4 @@
-# Server: GO HTTP Server, Client: HTML5
+# Server: GO HTTP, Client: HTML5
 
 ## Screen
 
